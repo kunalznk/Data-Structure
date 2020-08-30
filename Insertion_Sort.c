@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
+// Insertion Sort == O(n2)
 
 
 int main()
@@ -23,7 +23,7 @@ int main()
 		int hole = a[i];                       // As INSERTION SORT WORKS BY DIVIDING ARRAY INTO PART SORTED AND SORTED
 		iteration = iteration + 1;             // HOLE IS THE CURRENT ELEMENT WHICH IS TO BE INSERT IN APPROPRIATE POSTION
 	
-	    for(int j =i; (j>0) && a[j-1]>a[j];j--){
+	    for(int j =i; (j>0) && a[j-1]>a[j];j--){   //WHILE(J>0 && a[j-1]>a[j]) INSTEAD OF FOR LOOP CAN BE USED
 			
 			a[j] = a[j-1];
 			a[j-1] = hole;
